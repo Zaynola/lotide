@@ -11,6 +11,9 @@
 // return a * b;
 // }
 // console.assert(sumBuggy(1, 2) === 3);
+
+const assertEqual = require('./assertEqual');
+
 const eqArrays = function (array1, array2) {
     if (array1.length !== array2.length) {
         return false;
@@ -22,16 +25,17 @@ const eqArrays = function (array1, array2) {
     }
     return true;
 };
+module.exports = eqArrays;
 
-const assertEqual = function (actual, expected) {
-    if (actual === expected) {
-        console.log(`👍👍👍Assertion Passed: ${actual}  ===  ${expected}`)
-    } else {
-        console.log(`👎👎👎Assertion Failed: ${actual} !== ${expected}`)
-    }
-};
+// const assertEqual = function (actual, expected) {
+//     if (actual === expected) {
+//         console.log(`👍👍👍Assertion Passed: ${actual}  ===  ${expected}`)
+//     } else {
+//         console.log(`👎👎👎Assertion Failed: ${actual} !== ${expected}`)
+//     }
+// };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
+// assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
 // assertEqual(1, 1);
 // assertEqual("Lighthouse Labs", "Bootcamp");
 // assertEqual("Lighthouse", "Lighthouse");
