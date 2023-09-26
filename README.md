@@ -12,11 +12,11 @@ This project was created and published by me as part of my learnings at Lighthou
 
 **Install it:**
 
-`npm install @olaolu.odushola/lotide`
+`npm i zaynola-lotide`
 
 **Require it:**
 
-`const _ = require('@olaolu.odushola/lotide');`
+`const _ = require('zaynola-lotide');`
 
 **Call it:**
 
@@ -30,4 +30,4 @@ The following functions are currently implemented:
 * `function2(...)`: description
 * `function3(...)`: description
 
-version 1.0.0
+version 1.0.2
