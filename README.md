@@ -30,4 +30,4 @@ The following functions are currently implemented:
 * `function2(...)`: description
 * `function3(...)`: description
 
-version 1.0.2
+version 1.0.4
